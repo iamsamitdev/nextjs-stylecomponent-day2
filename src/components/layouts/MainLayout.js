@@ -10,8 +10,10 @@ const MainLayout = ({children, title=''}) => {
             <title>{title} | My Project</title>
         </Head>
         <Navbar />
-        {children}
-        <Footer />
+        <div style={{paddingTop:'63px'}}>
+          {children}
+        </div>
+        <Footer /> 
     </>
   )
 }
